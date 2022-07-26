@@ -27,6 +27,7 @@ btns.forEach(btn =>{
             }
         })
     
+        .
     })
 })
 /*
