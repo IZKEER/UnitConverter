@@ -25,6 +25,8 @@ btns.forEach(btn =>{
                 displayValue.innerText = (inputValue * 2.204).toFixed(2);
                 
             }
+
+            .
         })
     })
 })
