@@ -7,21 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Converter</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FONT LINKS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <!-- main container -->
     <main id="container">
-        <div class="hero-container">
-            <h1> Metric/Imperial unit converter</h1>
-            <div class="input-container">
-                <p>20</p>
-                <button class="input-btn">CONVERT</button>
-            </div>
+        <!-- UNIT converter buttons -->
+        <div class="header-button">
+            <button id="metric-btn">kilos</button>
+            <button id="liters-btn">Liters</button>
+            <button id="kilograms-btn">Kilograms</button>
         </div>
 
+        <!-- title & input value box -->
+        <div class="hero-container">
+            <h1 id="title-converter"> Converter </h1>
+            <div class="input-container">
+                <input class="input-value" type="text" placeholder="0" id="value-input">
+            </div>
+            <button class="input-btn" id="input-btn">CONVERT</button>
+            <!-- END OF HERO CONTAINER -->
+        </div>
 
-
+        <div id="row">
+            <div class="length-container">
+                <h3>Length (Meter/Feet)</h3>
+                <p id="length">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+            </div>
+            <div class="volume-container">
+                <h3>Volume (Liters/Gallons)
+                </h3>
+                <p id="liters">batatamoh</p>
+            </div>
+            <div class="mass-container">
+                <h3>Mass (Kilograms/Pounds)</h3>
+                <p id="kilos">supermetrica</p>
+            </div>
+        </div>
 
     </main>
 

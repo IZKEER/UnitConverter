@@ -1,23 +1,133 @@
 body {
+    background-color: darkslategrey;
+    width: 100%;
+    display: flex;
     margin: 0px;
     padding: 10px;
+    justify-content: center;
 }
 
+* {
+    font-family: 'Inter';
+}
+
+/* HERO SECTION */
+
 #container {
+    position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-    width: 50%;
+    width: 550px;
     height: 729px;
-    border: 2px solid green;
-    background-color: aquamarine;
+    background-color: #1F2937;
 }
 
 .hero-container {
+    background: #6943FF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: 25%;
-    margin: 10px;
-    border: 1px solid rgb(0, 77, 128);
+    height: 285px;
+    padding-top: 15px;
 }
 
-.input-btn {}
+h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.input-container {
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    background: none;
+    width: 117px;
+    height: 83px;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    font-size: 58px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+
+input::placeholder {
+    border: none;
+    opacity: 0.2;
+    color: #fff;
+}
+
+.input-btn {
+    width: 117px;
+    min-height: 42px;
+    border-radius: 5px;
+    border: none;
+    margin: 26.77px;
+    font-size: 0.5;
+
+}
+
+.input-btn:hover {
+    cursor: pointer;
+    background-color: #CCC1FF;
+    transition: 0s;
+    transition-delay: 0.05s;
+}
+
+
+
+/*  ================================================================= */
+
+
+#row div {
+    background-color: #273549;
+    margin: 25px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: -webkit-fill-available;
+    height: 108.57px;
+    border-radius: 4.68077px 0px 0px 0px;
+}
+
+#row h3 {
+    color: #CCC1FF;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 3px;
+}
+
+#row p {
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
+
+@media only screen and (max-device-width: 480px) {
+    #container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    #row {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        ;
+    }
+
+
+}
