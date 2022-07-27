@@ -3,7 +3,7 @@ body {
     width: 100%;
     display: flex;
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
     justify-content: center;
 }
 
@@ -11,16 +11,41 @@ body {
     font-family: 'Inter';
 }
 
+
+/* Unit buttons */
+
+
+.header-button button {
+
+    margin: 50px 10px 20px 10px;
+    background-color: #fff;
+    color: #000;
+    width: 100px;
+    height: 30px;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 5px;
+}
+
+.header-button button:hover {
+    cursor: pointer;
+    background-color: #CCC1FF;
+    transition: 0s;
+    transition-delay: 0.05s;
+}
+
 /* HERO SECTION */
 
 #container {
+    margin: 100px;
     position: fixed;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     width: 550px;
-    height: 729px;
+    height: fit-content;
     background-color: #1F2937;
 }
 
@@ -30,7 +55,6 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 285px;
     padding-top: 15px;
 }
 
@@ -41,6 +65,7 @@ h1 {
 }
 
 .input-container {
+    width: fit-content;
     align-items: center;
     justify-content: center;
 }
@@ -69,7 +94,7 @@ input::placeholder {
     border-radius: 5px;
     border: none;
     margin: 26.77px;
-    font-size: 0.5;
+    font-size: 0.8em;
 
 }
 
@@ -84,16 +109,19 @@ input::placeholder {
 
 /*  ================================================================= */
 
+/* #row {
+    background-color: #696969;
+    width: -webkit-fill-available;
+    height: fit-content;
+    border: 2px solid red;
+} */
 
 #row div {
-    background-color: #273549;
-    margin: 25px;
-    padding-top: 5px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
-    width: -webkit-fill-available;
+    width: fit-content;
     height: 108.57px;
     border-radius: 4.68077px 0px 0px 0px;
 }
@@ -120,14 +148,8 @@ input::placeholder {
         display: flex;
         align-items: center;
         width: 100%;
-
-    }
-
-    #row {
-        width: -webkit-fill-available;
         height: -webkit-fill-available;
-        ;
+        margin: 0;
+
     }
-
-
 }
