@@ -7,25 +7,25 @@ let btns = document.querySelectorAll('button[id^=btn]')
 let displayValue = document.getElementById('display-value')
 let displayName = document.getElementById('display-name')
 
-btns.forEach(btn =>{
+btns.forEach(btn => {
     btn.addEventListener('click', event => {
         document.getElementById('title-converter').innerText = btn.textContent + " Converter"
         inputButton.addEventListener('click',
-        function (){
-            inputValue = document.getElementById('value').value
-            console.log(inputValue)
-            if(btn.textContent === 'Meters'){
-                displayName.innerText = "Meters To Feet"
-                displayValue.innerText = (inputValue * 3.28084).toFixed(2);
-            }else if(btn.textContent === 'Liters'){
-                displayName.innerText = "Liters to Gallons"
-                displayValue.innerText = (inputValue * 0.264).toFixed(2);
-            }else{
-                displayName.innerText = "Kilos To Pounds"
-                displayValue.innerText = (inputValue * 2.204).toFixed(2);
-                
-            }
-        })
+            function () {
+                inputValue = document.getElementById('value').value
+                console.log(inputValue)
+                if (btn.textContent === 'Meters') {
+                    displayName.innerText = "Meters To Feet"
+                    displayValue.innerText = (inputValue * 3.28084).toFixed(2);
+                } else if (btn.textContent === 'Liters') {
+                    displayName.innerText = "Liters to Gallons"
+                    displayValue.innerText = (inputValue * 0.264).toFixed(2);
+                } else {
+                    displayName.innerText = "Kilos To Pounds"
+                    displayValue.innerText = (inputValue * 2.204).toFixed(2);
+
+                }
+            })
     })
 })
 /*
